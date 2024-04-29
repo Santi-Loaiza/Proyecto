@@ -1,0 +1,99 @@
+:root {
+    --First-color: #1d130d;
+    --Second-color: #ff8049;
+    --Third-color: #ffb17d;
+    --Fourth-color: #FFE9C1;
+    --Fifth-color: #7BB199;
+    --Sixth-color: #059379;
+    --Seventh-color: #8f8984;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 5vw;
+    position: relative;
+    margin: 0.2rem;
+    max-width: 3.5rem;
+}
+
+nav {
+    background-color: var(--First-color);
+}
+div a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    color: var(--Sixth-color);
+}
+.box-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.div-nav1{
+    display: inline;
+}
+.item-nav2{
+    color: var(--Fourth-color);
+    margin: 1rem;
+    position: relative;
+    bottom: 2vh;
+}
+
+.item-nav3{
+    color: var(--Fourth-color);
+    margin: 1rem;
+    position: relative;
+    top: 2vh;
+}
+.item-nav4{
+    color: var(--First-color);
+    background-color: var(--Fourth-color);
+    margin: 1rem;
+    position: relative;
+    top: 2vh;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+.title-index{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--Sixth-color);
+    margin: 3rem;
+    font-size: 4.5rem;
+}
+h3{
+    color: var(--First-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+.bottom-index{
+    text-align: center;
+    background-color: var(--Second-color);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin: 0px 43%;
+}
+.bottom-index a{
+    color: white;
+    font-size: 1.1rem;
+}
+footer{
+    background-color: var(--First-color);
+    margin-top: 1%;
+    height: 20vh;
+    width: 100%;
+}
+.logo-inicio{
+    background-color: var(--First-color);
+    position: fixed;
+    top: 5%;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0.5rem;
+}
