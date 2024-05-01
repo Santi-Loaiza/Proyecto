@@ -1,5 +1,5 @@
 :root {
-    --First-color: #1d130d;
+    --First-color: #000000;
     --Second-color: #ff8049;
     --Third-color: #ffb17d;
     --Fourth-color: #FFE9C1;
@@ -12,6 +12,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo {
     width: 5vw;
@@ -22,6 +23,7 @@
 
 nav {
     background-color: var(--First-color);
+    min-height: 60px;
 }
 div a{
     text-decoration: none;
@@ -42,20 +44,23 @@ a:hover{
     margin: 1rem;
     position: relative;
     bottom: 2vh;
+    font-size: 1.5rem;
 }
 
 .item-nav3{
     color: var(--Fourth-color);
     margin: 1rem;
     position: relative;
-    top: 2vh;
+    font-size: 1.2rem;
+    top: 3vh;
 }
 .item-nav4{
     color: var(--First-color);
     background-color: var(--Fourth-color);
     margin: 1rem;
     position: relative;
-    top: 2vh;
+    font-size: 1.2rem;
+    top: 3vh;
     padding: 0.3rem;
     border-radius: 0.3rem;
 }
@@ -68,8 +73,7 @@ a:hover{
 }
 h3{
     color: var(--First-color);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 2rem;
     font-size: 2rem;
 }
@@ -96,4 +100,129 @@ footer{
     top: 5%;
     border-radius: 0 1rem 1rem 0;
     padding: 0.5rem;
+    z-index: 1;
+}
+.drama{
+    background-image: url(../MULTIMEDIA/IMAGENES/imagenorgulloyprejuicio.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100vw;
+    height: 100%;
+    min-height: 1000px;
+    box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
+}
+.drama h1{
+    text-align: center;
+    position: relative;
+    color: var(--Fourth-color);
+    font-size: 4rem;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+.descripcion-genero{
+    position: relative;
+    color: white;
+    background-color: #ffe9c123;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto 10vw;
+    font-size: 1.1rem;
+}
+.subtitle-list-films{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.list-films{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1%;
+}
+.film-box{
+    width: 25%;
+    background: linear-gradient(rgba(1, 1, 1, 0.856), rgba(211, 211, 211, 0.137), rgba(0, 0, 0, 0.88));
+    border-radius: 1rem;
+    max-height: 800px;
+    min-height: 400px;
+    max-width: 270px;
+    padding: 1rem;
+    margin: 1%;
+}
+picture img{
+    width: 100%;
+    border-radius: 0.5rem;
+    max-width: 250px;
+}
+.film-title{
+    color: white;
+    border-bottom: var(--Second-color) solid 2px;
+    padding: 0.5rem;
+    min-height: 2rem;
+    ma
+}
+.film-sinopsis{
+    color: white;
+    max-height: 200px;
+    overflow: hidden;
+}
+.film-platforms{
+    padding-top: 1rem ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+.platforms{
+    margin-top: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    position: relative;
+}
+.platform img{
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+    max-width: 50px;
+    max-height: 50px;
+}
+.titulo-generos{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+.generos{
+    background-image: url(../MULTIMEDIA/IMAGENES/denise-jans-Lq6rcifGjOU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+    box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
+}
+.list-generos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genero{
+    font-size: 2.5rem;
+    background-color: #79402894;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    text-align: center;
+}
+.genero a{
+    color: white;
+    text-decoration: none;
+}
+.genero a:hover{
+    color: var(--Sixth-color);
 }
