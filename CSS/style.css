@@ -217,10 +217,9 @@ picture img {
 
 .film-sinopsis {
     color: white;
-    max-height: 200px;
-    overflow: hidden;
+    max-height: 210px;
+    overflow:auto;
 }
-
 .film-platforms {
     padding-top: 1rem;
     display: flex;
