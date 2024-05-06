@@ -109,16 +109,32 @@ footer{
     align-items: center;
     padding: 0.5rem;
 }
-.drama{
-    background-image: url(../MULTIMEDIA/IMAGENES/imagenorgulloyprejuicio.webp);
+.drama,
+.comedia,
+.terror,
+.thriller,
+.musical,
+.comedia,
+.accion,
+.cienciaficcion{
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
     width: 100vw;
     height: 100%;
     min-height: 1000px;
     box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
 }
-.drama h1{
+.drama{
+    background-image: url(../MULTIMEDIA/IMAGENES/imagenorgulloyprejuicio.webp);
+}
+.drama h1,
+.comedia h1,
+.terror h1,
+.thriller h1,
+.accion h1,
+.musical h1,
+.cienciaficcion h1{
     text-align: center;
     position: relative;
     color: var(--Fourth-color);
@@ -151,7 +167,8 @@ footer{
 }
 .film-box{
     width: 25%;
-    background: linear-gradient(rgba(1, 1, 1, 0.856), rgba(211, 211, 211, 0.137), rgba(0, 0, 0, 0.88));
+   background: transparent;
+   backdrop-filter: blur(70px);
     border-radius: 1rem;
     max-height: 800px;
     min-height: 400px;
@@ -159,6 +176,9 @@ footer{
     max-width: 280px;
     padding: 1rem;
     margin: 1%;
+}
+.film-box:hover{
+    box-shadow: 0 0 15px 5px var(--Sixth-color);
 }
 picture img{
     width: 100%;
@@ -232,4 +252,220 @@ picture img{
 }
 .genero a:hover{
     color: var(--Sixth-color);
+}
+
+.log-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/Fondo-log-sign.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.log-in-section{
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+.inputbox input{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.forget{
+    margin: 35px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+form h1{
+    font-size: 2rem;
+    color: var(--Second-color);
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid var(--Second-color);
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.forget label{
+    display: flex;
+    align-items: center;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget a,
+.recordar-contraseña a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+button:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.register,
+.Log{
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+.register p a,
+.Log p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover,
+.Log p a:hover{
+    text-decoration: underline;
+}
+.sign-up-section{
+    position: relative;
+    max-width: 650px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/Fondo-log-sign.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sign-up-section form .inputbox{
+    position: relative;
+    margin: 1rem ;
+    max-width: 310px;
+    border-bottom: 2px solid var(--Second-color);
+}
+.form-container1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.recordar-contraseña,
+.forget{
+    color: #fff;
+    margin-bottom: 1rem;
+    accent-color: var(--Second-color);
+    cursor: pointer;
+}
+.recordar-contraseña input:focus,
+.forget input:focus{
+    outline: none;
+    box-shadow: 0 0 5px 0.5px #ff634798;
+}
+.recordar-contraseña input,
+.forget input{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.recordar-contraseña input:checked,
+.forget input:checked{
+    background-image: url('../MULTIMEDIA/IMAGENES/LOGO/Icono.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.form-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.form-bottom button{
+    max-width: 50%;
+}
+
+.comedia{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/ComediaBack.jfif);
+}
+.thriller{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/thrillerBack.jpg);
+}
+.terror{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/terrorBack.jpg);
+}
+.accion{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/accionBack.jpg);
+}
+.cienciaficcion{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/ciencia\ ficcionBack.jpg);
+}
+.musical{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/musicalBack.jpg);
+}
+@media (max-width: 600px) {
+    .sign-up-section{
+        max-width: 400px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
