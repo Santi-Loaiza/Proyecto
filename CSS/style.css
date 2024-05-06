@@ -188,7 +188,7 @@ footer {
 .film-box {
     width: 25%;
     background: transparent;
-    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
     border-radius: 1rem;
     max-height: 800px;
     min-height: 400px;
