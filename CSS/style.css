@@ -14,6 +14,7 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .logo {
     width: 5vw;
     position: relative;
@@ -25,21 +26,26 @@ nav {
     background-color: var(--First-color);
     min-height: 60px;
 }
-div a{
+
+div a {
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-a:hover{
+
+a:hover {
     color: var(--Sixth-color);
 }
-.box-nav{
+
+.box-nav {
     display: flex;
     justify-content: space-between;
 }
-.div-nav1{
+
+.div-nav1 {
     display: inline;
 }
-.item-nav2{
+
+.item-nav2 {
     color: var(--Fourth-color);
     margin: 1rem;
     position: relative;
@@ -47,14 +53,15 @@ a:hover{
     font-size: 1.5rem;
 }
 
-.item-nav3{
+.item-nav3 {
     color: var(--Fourth-color);
     margin: 1rem;
     position: relative;
     font-size: 1.2rem;
     top: 3vh;
 }
-.item-nav4{
+
+.item-nav4 {
     color: var(--First-color);
     background-color: var(--Fourth-color);
     margin: 1rem;
@@ -64,37 +71,43 @@ a:hover{
     padding: 0.3rem;
     border-radius: 0.3rem;
 }
-.title-index{
+
+.title-index {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--Sixth-color);
     margin: 3rem;
     font-size: 4.5rem;
 }
-h3{
+
+h3 {
     color: var(--First-color);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 2rem;
     font-size: 2rem;
 }
-.bottom-index{
+
+.bottom-index {
     text-align: center;
     background-color: var(--Second-color);
     border-radius: 1rem;
     padding: 0.8rem;
     margin: 0px 43%;
 }
-.bottom-index a{
+
+.bottom-index a {
     color: white;
     font-size: 1.1rem;
 }
-footer{
+
+footer {
     background-color: var(--First-color);
     margin-top: 1%;
     height: 20vh;
     width: 100%;
 }
-.logo-inicio{
+
+.logo-inicio {
     background-color: var(--First-color);
     position: fixed;
     display: flex;
@@ -104,11 +117,13 @@ footer{
     padding: 0.5rem;
     z-index: 1;
 }
-.item-nav-generos{
+
+.item-nav-generos {
     color: var(--Fourth-color);
     align-items: center;
     padding: 0.5rem;
 }
+
 .drama,
 .comedia,
 .terror,
@@ -116,25 +131,27 @@ footer{
 .musical,
 .comedia,
 .accion,
-.cienciaficcion{
+.cienciaficcion {
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     width: 100vw;
     height: 100%;
     min-height: 1000px;
     box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
 }
-.drama{
+
+.drama {
     background-image: url(../MULTIMEDIA/IMAGENES/imagenorgulloyprejuicio.webp);
 }
+
 .drama h1,
 .comedia h1,
 .terror h1,
 .thriller h1,
 .accion h1,
 .musical h1,
-.cienciaficcion h1{
+.cienciaficcion h1 {
     text-align: center;
     position: relative;
     color: var(--Fourth-color);
@@ -142,7 +159,8 @@ footer{
     padding-top: 4%;
     padding-bottom: 2%;
 }
-.descripcion-genero{
+
+.descripcion-genero {
     position: relative;
     color: white;
     background-color: #ffe9c123;
@@ -151,13 +169,14 @@ footer{
     margin: auto 10vw;
     font-size: 1.1rem;
 }
-.subtitle-list-films{
+
+.subtitle-list-films {
     text-align: center;
     color: white;
     font-size: 2rem;
 }
 
-.list-films{
+.list-films {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -165,10 +184,12 @@ footer{
     align-items: flex-start;
     gap: 1%;
 }
-.film-box{
+
+.film-box {
     width: 25%;
-   background: transparent;
-   backdrop-filter: blur(70px);
+    background: transparent;
+    transition: filter 0.2s ease-in-out;
+    filter: blur(70px);
     border-radius: 1rem;
     max-height: 800px;
     min-height: 400px;
@@ -177,27 +198,32 @@ footer{
     padding: 1rem;
     margin: 1%;
 }
-.film-box:hover{
+
+.film-box:hover {
     box-shadow: 0 0 15px 5px var(--Sixth-color);
 }
-picture img{
+
+picture img {
     width: 100%;
     border-radius: 0.5rem;
     max-width: 250px;
 }
-.film-title{
+
+.film-title {
     color: white;
     border-bottom: var(--Second-color) solid 2px;
     padding: 0.5rem;
     min-height: 2rem;
 }
-.film-sinopsis{
+
+.film-sinopsis {
     color: white;
     max-height: 200px;
     overflow: hidden;
 }
-.film-platforms{
-    padding-top: 1rem ;
+
+.film-platforms {
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -205,26 +231,30 @@ picture img{
     align-items: center;
     gap: 5%;
 }
-.platforms{
+
+.platforms {
     margin-top: 1rem;
     color: white;
     font-size: 0.9rem;
     position: relative;
 }
-.platform img{
+
+.platform img {
     width: 100%;
     border-radius: 30px;
     position: relative;
     max-width: 50px;
     max-height: 50px;
 }
-.titulo-generos{
+
+.titulo-generos {
     text-align: center;
     color: white;
     font-size: 2.5rem;
     padding-top: 1rem;
 }
-.generos{
+
+.generos {
     background-image: url(../MULTIMEDIA/IMAGENES/denise-jans-Lq6rcifGjOU-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,12 +262,14 @@ picture img{
     height: 100%;
     box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
 }
-.list-generos{
+
+.list-generos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.genero{
+
+.genero {
     font-size: 2.5rem;
     background-color: #79402894;
     border-radius: 10px;
@@ -246,15 +278,17 @@ picture img{
     color: white;
     text-align: center;
 }
-.genero a{
+
+.genero a {
     color: white;
     text-decoration: none;
 }
-.genero a:hover{
+
+.genero a:hover {
     color: var(--Sixth-color);
 }
 
-.log-in{
+.log-in {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,7 +298,8 @@ picture img{
     background-size: cover;
     background-position: center;
 }
-.log-in-section{
+
+.log-in-section {
     position: relative;
     max-width: 400px;
     background-color: transparent;
@@ -275,7 +310,8 @@ picture img{
     align-items: center;
     padding: 2rem 3rem;
 }
-.inputbox input{
+
+.inputbox input {
     width: 100%;
     height: 60px;
     background: transparent;
@@ -285,25 +321,29 @@ picture img{
     padding: 0 35px 0 5px;
     color: #fff;
 }
-.forget{
+
+.forget {
     margin: 35px 0;
     font-size: 0.85rem;
     color: #fff;
     display: flex;
     justify-content: space-between;
 }
-form h1{
+
+form h1 {
     font-size: 2rem;
     color: var(--Second-color);
     text-align: center;
 }
-.inputbox{
+
+.inputbox {
     position: relative;
     margin: 30px 0;
     max-width: 310px;
     border-bottom: 2px solid var(--Second-color);
 }
-.inputbox label{
+
+.inputbox label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -313,27 +353,33 @@ form h1{
     pointer-events: none;
     transition: all 0.5s ease-in-out;
 }
-input:focus ~ label,
-input:valid ~ label{
+
+input:focus~label,
+input:valid~label {
     top: -5px;
 }
-.forget label{
+
+.forget label {
     display: flex;
     align-items: center;
 }
-.forget label input{
+
+.forget label input {
     margin-right: 3px;
 }
+
 .forget a,
-.recordar-contraseña a{
+.recordar-contraseña a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
-.forget a:hover{
+
+.forget a:hover {
     text-decoration: underline;
 }
-button{
+
+button {
     width: 100%;
     height: 40px;
     border-radius: 40px;
@@ -344,27 +390,32 @@ button{
     font-weight: 600;
     transition: all 0.4s ease;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(255, 255, 255, 0.5);
 }
+
 .register,
-.Log{
+.Log {
     font-size: 0.9rem;
     color: #fff;
     text-align: center;
     margin: 10px 0 10px;
 }
+
 .register p a,
-.Log p a{
+.Log p a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
+
 .register p a:hover,
-.Log p a:hover{
+.Log p a:hover {
     text-decoration: underline;
 }
-.sign-up-section{
+
+.sign-up-section {
     position: relative;
     max-width: 650px;
     border: 2px solid rgba(255, 255, 255, 0.5);
@@ -376,7 +427,8 @@ button:hover{
     align-items: center;
     padding: 2rem 3rem;
 }
-.sign-up{
+
+.sign-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -386,13 +438,15 @@ button:hover{
     background-size: cover;
     background-position: center;
 }
-.sign-up-section form .inputbox{
+
+.sign-up-section form .inputbox {
     position: relative;
-    margin: 1rem ;
+    margin: 1rem;
     max-width: 310px;
     border-bottom: 2px solid var(--Second-color);
 }
-.form-container1{
+
+.form-container1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -400,20 +454,23 @@ button:hover{
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .recordar-contraseña,
-.forget{
+.forget {
     color: #fff;
     margin-bottom: 1rem;
     accent-color: var(--Second-color);
     cursor: pointer;
 }
+
 .recordar-contraseña input:focus,
-.forget input:focus{
+.forget input:focus {
     outline: none;
     box-shadow: 0 0 5px 0.5px #ff634798;
 }
+
 .recordar-contraseña input,
-.forget input{
+.forget input {
     margin-right: 1rem;
     margin-left: 1rem;
     width: 1rem;
@@ -427,43 +484,52 @@ button:hover{
     border-radius: 3px;
     cursor: pointer;
 }
+
 .recordar-contraseña input:checked,
-.forget input:checked{
+.forget input:checked {
     background-image: url('../MULTIMEDIA/IMAGENES/LOGO/Icono.PNG');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-.form-bottom{
+
+.form-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
 }
-.form-bottom button{
+
+.form-bottom button {
     max-width: 50%;
 }
 
-.comedia{
+.comedia {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/ComediaBack.jfif);
 }
-.thriller{
+
+.thriller {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/thrillerBack.jpg);
 }
-.terror{
+
+.terror {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/terrorBack.jpg);
 }
-.accion{
+
+.accion {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/accionBack.jpg);
 }
-.cienciaficcion{
+
+.cienciaficcion {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/ciencia\ ficcionBack.jpg);
 }
-.musical{
+
+.musical {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/musicalBack.jpg);
 }
+
 @media (max-width: 600px) {
-    .sign-up-section{
+    .sign-up-section {
         max-width: 400px;
         margin-top: 5%;
         margin-bottom: 5%;
