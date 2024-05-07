@@ -28,9 +28,14 @@
     padding: 15px;
     border: none;
     border-radius: 10px;
-    width: 300px;
+    width: 10%;
     background-color: rgba(7, 6, 6, 0.7);
     color: var(--Fourth-color);
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .botones a {
     color: #ffffffbd;
@@ -96,13 +101,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
 }
 .item-carrusel {
     border-radius: 20px;
     max-width: 250px;
-    
+    min-width: 200px;
 }
 .item-carrusel img {
     width: 100%;
@@ -130,6 +136,7 @@ footer{
 }
 .footer-contenedor .div-footer{
     max-width: 30%;
+    min-width: 50px;
     color: var(--Seventh-color);
     padding: 0.5rem;
     border-left: 3px solid var(--Second-color);
@@ -152,7 +159,8 @@ footer{
     color: var(--Sixth-color);
 }
 .div-footer li img{
-    width: 5%;
+    width: 8%;
+    min-width: 20px;
 }
 nav {
     background-color: var(--First-color);
