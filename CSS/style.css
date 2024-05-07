@@ -60,14 +60,16 @@
     text-align: center;
     align-items: center;
     padding: 30%;
+    min-height: 10rem;
+    max-height: 40rem;
 }
 .welcome-content h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .welcome-content p {
-    font-size: 24px;
+    font-size: 1.6rem;
 }
 .welcome-content .button {
     position: relative;
