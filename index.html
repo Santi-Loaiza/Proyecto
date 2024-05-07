@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,27 +10,59 @@
 </head>
 
 <body>
-    <div>
-        <nav class="box-nav">
-            <div class="div-item1"><a href="./index.html" target="_self"><img class="logo"
-                        src="./MULTIMEDIA/IMAGENES/LOGO/Icono.PNG" alt="Inicio"></a><a class="item-nav2"
-                    href="./HTML/generos.html" target="_self">Generos</a></div>
-            <div class="div-item2"><a class="item-nav3" href="./HTML/Sign_up.html">Sign up</a><a class="item-nav4"
-                    href="./HTML/log_in.html">Log in</a></div>
+    <header class="index-header">
+        <nav class="index-nav">
+            <div class="div-item1">
+               <a href="./home.html"><h1>FilmSpot</h1></a> 
+            </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <div class="botones">
+                <a href="./HTML/generos.html">Generos</a>
+                <a href="./HTML/log_in.html">Log in</a>
+                <a href="./HTML/Sign_up.html">Sign up</a>
+            </div>
+            <div> <img src="./MULTIMEDIA/IMAGENES/LOGO/Icono.PNG" alt="FilmSpot logo" class="logo"></div>
         </nav>
-    </div>
-    <main>
-        <div>
-            <h1 class="title-index">¿No sabes que peli ver, ni en donde?</h1>
-            <h3>Ingresa ya para ver las peliculas mas interesantes y tendenciales del momento y descubrir en que
-                plataformas de streaming se encuentran</h3>
-            <div class="bottom-index">
-                <a href="./HTML/generos.html">Ingresa aquí</a>
+
+        <section class="welcome">
+            <div class="welcome-content">
+                <h2>Bienvenido a FilmSpot</h2>
+                <p>¿Qué quieres ver?</p>
+                <div class="button">
+                    <a href="./HTML/generos.html">Explorar</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="carrusel">
+        <div class="titulo-carrusel">
+            <h2>Tendencias</h2>
+        </div>
+        <div class="contenedor-carrusel">
+            <div class="item-carrusel">
+                <img src="./MULTIMEDIA/IMAGENES/Home/peliculas 1.jpg" alt="the idea of you">
+            </div>
+            <div class="item-carrusel">
+                <img src="../MULTIMEDIA/IMAGENES/Home/peliculas 2.jpg" alt="monkey man">
+            </div>
+            <div class="item-carrusel">
+                <img src="./MULTIMEDIA/IMAGENES/Home/pelicula 3.jpg" alt="Baby reender">
+            </div>
+            <div class="item-carrusel">
+                <img src="./MULTIMEDIA/IMAGENES/Home/pelicula 4.jpeg" alt="The fall g">
+            </div>
+            <div class="item-carrusel">
+                <img src="./MULTIMEDIA/IMAGENES/Home/pelicula 5.jpg" alt="Theyre whaching">
             </div>
         </div>
-    </main>
+    </section>
+
     <footer>
-        .
+        <div class="contenedor">
+            <p>&copy; 2024 filmSpot. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 
