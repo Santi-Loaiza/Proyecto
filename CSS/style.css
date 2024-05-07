@@ -14,9 +14,6 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
-    background-color: var(--Fourth-color);
-}
 .index-header{
     background-color: #131212;
     color: #fff;
@@ -89,55 +86,83 @@ body{
 .carrusel {
     background-color: #222;
     color: #fff;
-    padding: 20px 0;
+    padding: 1rem;
     text-align: center;
 }
 .carrusel-title {
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
 }
 .contenedor-carrusel {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     flex-direction: row;
-    width: 3500px;
+    justify-content: space-around;
+    width: 100%;
     height: auto;
 }
 .item-carrusel {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    margin-right: 20px;
     border-radius: 20px;
-    overflow: hidden;
     max-width: 250px;
+    
 }
 .item-carrusel img {
-    width: 300px;
-    height: 480px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    min-height: 380px;
 }
-.carrusel-item img:hover {
+.item-carrusel:hover {
     transform: scale(1.05);
+}
+footer{
+    background-color: white;
+    margin-bottom: 0px;
+    height: 25vh;
+}
+.footer-contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    padding: 1rem;
+}
+.footer-contenedor .div-footer{
+    max-width: 30%;
+    color: var(--Seventh-color);
+    padding: 0.5rem;
+    border-left: 3px solid var(--Second-color);
+}
+.div-footer h4{
+    font-size: 1.1rem;
+    color: #000000;
+}
+.div-footer li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.div-footer li a{
+    color: rgb(94, 92, 92);
+}
+.div-footer li a:hover{
+    color: var(--Sixth-color);
+}
+.div-footer li img{
+    width: 5%;
 }
 nav {
     background-color: var(--First-color);
     min-height: 60px;
 }
-
-div a {
+a{
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 a:hover {
     color: var(--Sixth-color);
-}
-
-.box-nav {
-    display: flex;
-    justify-content: space-between;
 }
 
 .div-nav1 {
@@ -173,14 +198,6 @@ h3 {
     color: white;
     font-size: 1.1rem;
 }
-
-footer {
-    background-color: var(--First-color);
-    margin-top: 1%;
-    height: 20vh;
-    width: 100%;
-}
-
 .logo-inicio {
     background-color: var(--First-color);
     position: fixed;
