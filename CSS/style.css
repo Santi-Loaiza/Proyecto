@@ -233,7 +233,8 @@ h3 {
 .musical,
 .comedia,
 .accion,
-.cienciaficcion {
+.cienciaficcion,
+.fantasia{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -253,7 +254,8 @@ h3 {
 .thriller h1,
 .accion h1,
 .musical h1,
-.cienciaficcion h1 {
+.cienciaficcion h1,
+.fantasia h1{
     text-align: center;
     position: relative;
     color: var(--Fourth-color);
@@ -628,6 +630,9 @@ button:hover {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/musicalBack.jpg);
 }
 
+.fantasia{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/fantasiaBack.webp);
+}
 @media (max-width: 600px) {
     .sign-up-section {
         max-width: 400px;
