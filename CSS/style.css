@@ -14,41 +14,47 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.index-header{
+
+.index-header {
     background-color: #131212;
     color: #fff;
 }
-.index-nav{
+
+.index-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    height: 6rem;
 }
-.busqueda input {
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    width: 10%;
-    background-color: rgba(7, 6, 6, 0.7);
-    color: var(--Fourth-color);
+.busqueda input{
+    display: none;
 }
-.botones{
+.botones {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .botones a {
     color: #ffffffbd;
     text-decoration: none;
     margin-left: 20px;
     font-size: 16px;
 }
-.logo {
-    width: 5vw;
+
+.logo-nav {
+    width: 25px;
     position: relative;
-    margin: 0.2rem;
-    max-width: 3.5rem;
+    align-self: center;
+    margin-left: 0.2rem;
 }
+.logo{
+    width: 35px;
+    align-self: center;
+    margin: 0.2rem;
+}
+
 .welcome {
     background-image: url('https://a.ltrbxd.com/resized/sm/upload/1v/t5/ny/lk/MV5BYWRmZWM2ZTktMzE1Ny00NmQyLWE3ZDItZTk5MjY5OGQ5NzdhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_-1200-1200-675-675-crop-000000.jpg');
     background-size: cover;
@@ -60,9 +66,9 @@
     text-align: center;
     align-items: center;
     padding: 30%;
-    min-height: 10rem;
-    max-height: 40rem;
+    height: 90vh;
 }
+
 .welcome-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -71,6 +77,7 @@
 .welcome-content p {
     font-size: 1.6rem;
 }
+
 .welcome-content .button {
     position: relative;
     background-color: white;
@@ -82,24 +89,30 @@
     margin: 1rem auto;
     transition: background-color 0.3s ease;
 }
-.welcome-content .button a{
+
+.welcome-content .button a {
     color: #ff3d4a;
 }
-.welcome-content .button:hover{
+
+.welcome-content .button:hover {
     background-color: #ff3d4a;
 }
-.welcome-content .button a:hover{
+
+.welcome-content .button a:hover {
     color: white;
 }
+
 .carrusel {
     background-color: #222;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
+
 .carrusel-title {
     margin-bottom: 1rem;
 }
+
 .contenedor-carrusel {
     display: flex;
     flex-direction: row;
@@ -108,11 +121,14 @@
     width: 100%;
     height: auto;
 }
+
 .item-carrusel {
     border-radius: 20px;
-    max-width: 250px;
-    min-width: 200px;
+    max-width: 230px;
+    min-width: 190px;
+    margin-bottom: 2rem;
 }
+
 .item-carrusel img {
     width: 100%;
     border-radius: 10px;
@@ -120,15 +136,74 @@
     transition: transform 0.3s ease;
     min-height: 380px;
 }
+#item__pelicula-1{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/peliculas1.jpg);
+}
+#item__pelicula-2{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/peliculas2.jpg);
+}
+#item__pelicula-3{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/pelicula3.jpg);
+}
+#item__pelicula-4{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/pelicula4.jpeg);
+}
+#item__pelicula-5{
+    background-image: url(../MULTIMEDIA/IMAGENES/Home/pelicula5.jpg);
+}
+#item__pelicula-1,
+#item__pelicula-2,
+#item__pelicula-3,
+#item__pelicula-4,
+#item__pelicula-5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 23.5rem;
+    border-radius: 10px;
+}
+#item__pelicula-1 p,
+#item__pelicula-2 p,
+#item__pelicula-3 p,
+#item__pelicula-4 p,
+#item__pelicula-5 p{
+    position: absolute;
+    padding-top: 2.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+#item__pelicula-1:hover,
+#item__pelicula-2:hover,
+#item__pelicula-3:hover,
+#item__pelicula-4:hover,
+#item__pelicula-5:hover{
+    background-color: rgba(0, 0, 0, 0.781);
+}
+#item__pelicula-1:hover p,
+#item__pelicula-2:hover p,
+#item__pelicula-3:hover p,
+#item__pelicula-4:hover p,
+#item__pelicula-5:hover p{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
 .item-carrusel:hover {
     transform: scale(1.05);
 }
-footer{
+
+footer {
     background-color: white;
     margin-bottom: 0px;
     height: 25vh;
 }
-.footer-contenedor{
+
+.footer-contenedor {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -136,42 +211,52 @@ footer{
     justify-content: space-around;
     background-color: white;
     padding: 1rem;
+    gap: 1rem;
 }
-.footer-contenedor .div-footer{
-    max-width: 30%;
+
+.footer-contenedor .div-footer {
+    max-width: 10rem;
     min-width: 50px;
     color: var(--Seventh-color);
     padding: 0.5rem;
     border-left: 3px solid var(--Second-color);
 }
-.div-footer h4{
-    font-size: 1.1rem;
+
+.div-footer h4 {
+    font-size: 1rem;
     color: #000000;
 }
-.div-footer li{
+
+.div-footer li {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 0.5rem;
 }
-.div-footer li a{
+
+.div-footer li a {
     color: rgb(94, 92, 92);
 }
-.div-footer li a:hover{
+
+.div-footer li a:hover {
     color: var(--Sixth-color);
 }
-.div-footer li img{
+
+.div-footer li img {
     width: 8%;
     min-width: 20px;
 }
+
 nav {
     background-color: var(--First-color);
     min-height: 60px;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 a:hover {
     color: var(--Sixth-color);
 }
@@ -179,17 +264,10 @@ a:hover {
 .div-nav1 {
     display: inline;
 }
-.div-item1 a{
+
+.div-item1 a {
     color: var(--Second-color);
 }
-.title-index {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--Sixth-color);
-    margin: 3rem;
-    font-size: 4.5rem;
-}
-
 h3 {
     color: var(--First-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -197,20 +275,8 @@ h3 {
     font-size: 2rem;
 }
 
-.bottom-index {
-    text-align: center;
-    background-color: var(--Second-color);
-    border-radius: 1rem;
-    padding: 0.8rem;
-    margin: 0px 43%;
-}
-
-.bottom-index a {
-    color: white;
-    font-size: 1.1rem;
-}
 .logo-inicio {
-    background-color: var(--First-color);
+    background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
     display: flex;
     top: 5%;
@@ -219,7 +285,6 @@ h3 {
     padding: 0.5rem;
     z-index: 1;
 }
-
 .item-nav-generos {
     color: var(--Fourth-color);
     align-items: center;
@@ -234,7 +299,7 @@ h3 {
 .comedia,
 .accion,
 .cienciaficcion,
-.fantasia{
+.fantasia {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -255,7 +320,7 @@ h3 {
 .accion h1,
 .musical h1,
 .cienciaficcion h1,
-.fantasia h1{
+.fantasia h1 {
     text-align: center;
     position: relative;
     color: var(--Fourth-color);
@@ -277,7 +342,7 @@ h3 {
 .subtitle-list-films {
     text-align: center;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .list-films {
@@ -290,16 +355,11 @@ h3 {
 }
 
 .film-box {
-    width: 25%;
-    background: transparent;
-    backdrop-filter: blur(80px);
+    background-color: rgba(128, 128, 128, 0.356);
     border-radius: 1rem;
-    max-height: 800px;
-    min-height: 400px;
-    min-width: 210px;
-    max-width: 280px;
+    max-width: 255px;
     padding: 1rem;
-    margin: 1%;
+    margin: 1rem;
 }
 
 .film-box:hover {
@@ -322,8 +382,9 @@ picture img {
 .film-sinopsis {
     color: white;
     max-height: 210px;
-    overflow:auto;
+    overflow: auto;
 }
+
 .film-platforms {
     padding-top: 1rem;
     display: flex;
@@ -355,7 +416,14 @@ picture img {
     font-size: 2.5rem;
     padding-top: 1rem;
 }
-
+.list-generos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
 .generos {
     background-image: url(../MULTIMEDIA/IMAGENES/denise-jans-Lq6rcifGjOU-unsplash.jpg);
     background-repeat: no-repeat;
@@ -364,15 +432,10 @@ picture img {
     height: 100%;
     box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
 }
-
-.list-generos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .genero {
-    font-size: 2.5rem;
+    max-width: 300px;
+    min-width: 150px;
+    font-size: 2rem;
     background-color: #79402894;
     border-radius: 10px;
     padding: 1rem;
@@ -519,39 +582,37 @@ button:hover {
 
 .sign-up-section {
     position: relative;
-    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(55px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 2rem 3rem;
+    padding: 1.5rem;
 }
 
 .sign-up {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/Fondo-log-sign.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 1rem;
 }
 
 .sign-up-section form .inputbox {
     position: relative;
     margin: 1rem;
-    max-width: 310px;
+    max-width: 300px;
     border-bottom: 2px solid var(--Second-color);
 }
 
 .form-container1 {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
@@ -630,13 +691,6 @@ button:hover {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/musicalBack.jpg);
 }
 
-.fantasia{
+.fantasia {
     background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/fantasiaBack.webp);
-}
-@media (max-width: 600px) {
-    .sign-up-section {
-        max-width: 400px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
 }
