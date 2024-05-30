@@ -36,6 +36,8 @@
 .sign-up-section{
     max-width: 590px;
     margin: 10rem auto;
+    background-color: transparent;
+    backdrop-filter: blur(55px);
 }
 .inputbox{
     max-width: 50%;
@@ -55,4 +57,11 @@
     min-height: 400px;
     max-width: 300px;
     min-width: 250px;
+}
+.botones a{
+    font-size: 1.1rem;
+}
+.log-in-section{
+    background-color: transparent;
+    backdrop-filter: blur(55px);
 }

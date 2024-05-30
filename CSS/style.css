@@ -40,7 +40,7 @@
     color: #ffffffbd;
     text-decoration: none;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 0.9rem;
 }
 
 .logo-nav {
@@ -124,18 +124,10 @@
 
 .item-carrusel {
     border-radius: 20px;
-    max-width: 230px;
-    min-width: 190px;
+    width: 210px;
     margin-bottom: 2rem;
 }
 
-.item-carrusel img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    min-height: 380px;
-}
 #item__pelicula-1{
     background-image: url(../MULTIMEDIA/IMAGENES/Home/peliculas1.jpg);
 }
@@ -467,10 +459,10 @@ picture img {
 .log-in-section {
     position: relative;
     max-width: 400px;
-    background-color: transparent;
+    background-color:rgba(29, 28, 28, 0.562) ;
+    backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    backdrop-filter: blur(55px);
     display: flex;
     align-items: center;
     padding: 2rem 3rem;
@@ -587,7 +579,8 @@ button:hover {
     max-width: 300px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    backdrop-filter: blur(55px);
+    background-color:rgba(29, 28, 28, 0.562) ;
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
