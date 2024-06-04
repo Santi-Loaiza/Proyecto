@@ -40,6 +40,11 @@
     border-radius: 1rem;
     max-height: 800px;
     min-height: 400px;
-    max-width: 350px;
+    max-width: 270px;
     min-width: 250px;
+}
+.genero a img{
+    max-width: 50px;
+    padding: 0.3rem;
+    border-radius: 6px;
 }

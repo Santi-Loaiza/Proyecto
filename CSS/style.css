@@ -282,6 +282,20 @@ h3 {
     align-items: center;
     padding: 0.5rem;
 }
+.genero a img{
+    width: 100%;
+    max-width: 40px;
+    margin-right: 1rem;
+    padding: 0.1rem;
+    background-color: #ea6f3a65;
+    border-radius: 5px;
+}
+.genero a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
 
 .drama,
 .comedia,
@@ -352,6 +366,10 @@ h3 {
     max-width: 255px;
     padding: 1rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .film-box:hover {
@@ -362,6 +380,7 @@ picture img {
     width: 100%;
     border-radius: 0.5rem;
     max-width: 250px;
+    margin: 0 auto;
 }
 
 .film-title {
@@ -369,12 +388,14 @@ picture img {
     border-bottom: var(--Second-color) solid 2px;
     padding: 0.5rem;
     min-height: 2rem;
+    text-align: center;
 }
 
 .film-sinopsis {
     color: white;
     max-height: 210px;
     overflow: auto;
+    text-align: center;
 }
 
 .film-platforms {
@@ -392,6 +413,7 @@ picture img {
     color: white;
     font-size: 0.9rem;
     position: relative;
+    text-align: center;
 }
 
 .platform img {
@@ -425,8 +447,10 @@ picture img {
     box-shadow: 20px 200px 200px 100px rgba(0, 0, 0, 0.8) inset;
 }
 .genero {
-    max-width: 300px;
+    max-width: 380px;
     min-width: 150px;
+    max-height: 160px;
+    min-height: 30px;
     font-size: 2rem;
     background-color: #79402894;
     border-radius: 10px;
@@ -434,6 +458,8 @@ picture img {
     margin: 1rem;
     color: white;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .genero a {
