@@ -1,4 +1,14 @@
 /*min-width: 600px*/
+
+:root {
+    --First-color: #000000;
+    --Second-color: #ff8049;
+    --Third-color: #ffb17d;
+    --Fourth-color: #FFE9C1;
+    --Fifth-color: #7BB199;
+    --Sixth-color: #059379;
+    --Seventh-color: #8f8984;
+}
 .sign-up-section {
     max-width: 400px;
     margin-top: 5%;
@@ -65,3 +75,23 @@
     background-color: transparent;
     backdrop-filter: blur(55px);
 }
+.title-box--review{
+    font-size: 1.4rem;
+    background-color: var(--Fourth-color);
+    height: 200px;
+    max-width: 300px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px 0 0 15px;
+}
+.boton-form--generos{
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  .form-generos form{
+    max-width: 500px;
+  }
