@@ -62,3 +62,14 @@
 .form-generos form{
     max-width: 650px;
 }
+.form-peliculas{
+    max-width: 850px;
+}
+#box--form-peliculas{
+    max-width: 400px;
+}
+.section-form-peliculas{
+    background-color: rgba(255, 154, 104, 0.656);
+    padding: 80px;
+    border-radius: 15px 0 0 15px;
+}

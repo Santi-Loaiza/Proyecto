@@ -305,7 +305,8 @@ h3 {
 .comedia,
 .accion,
 .cienciaficcion,
-.fantasia {
+.fantasia,
+.body--form-peliculas {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -754,7 +755,7 @@ button:hover {
     display: none;
   }
   
-  label {
+  .clasificacion {
     color: grey;
   }
   
@@ -763,12 +764,11 @@ button:hover {
     unicode-bidi: bidi-override;
   }
   
-  label:hover,
-  label:hover ~ label {
+  .clasificacion-star:hover{
     color: orange;
   }
   
-  input[type="radio"]:checked ~ label {
+  .clasificacion input[type="radio"]:checked ~ label {
     color: orange;
   }
   .form-review{
@@ -802,7 +802,8 @@ button:hover {
 
   .form-generos form{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 310px;
@@ -812,6 +813,7 @@ button:hover {
     border-radius: 10px;
     margin: 0 auto;
     gap: 1rem;
+    max-width: 600px;
   }
   .form-generos{
     width: 100%;
@@ -823,3 +825,39 @@ button:hover {
   .titulo-generos h3{
     color: white;
   }
+  .body--form-peliculas{
+    background-image: url(../MULTIMEDIA/IMAGENES/Backgrounds/back-formPeliculas.jpg);
+  }
+  .form-peliculas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 310px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.512);
+    border-radius: 10px;
+    max-width: 300px;
+  }
+  .title--form-peliculas{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding-top: 4rem;
+    text-align: center;
+  }
+  .form-peliculas div{
+    text-align: center;
+    margin-top: 10px;
+    max-width: 230px;
+    }
+    .form-peliculas div span{
+        font-weight: 500;
+    }
+    .form-peliculas div input{
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+  

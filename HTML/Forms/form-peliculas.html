@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="../../CSS/desktop.css" media="screen and (min-width: 900px)">
+    <link rel="icon" href="../../MULTIMEDIA/IMAGENES/LOGO/Icono.PNG" type="image/x-icon">
+    <title>Formulario peliculas</title>
+</head>
+<body class="body--form-peliculas">
+    <header>
+        <div class="logo-inicio">
+            <a href="../../index.html"><img src="../../MULTIMEDIA/IMAGENES/LOGO/Icono.PNG" alt="Inicio" class="logo"></a>
+        </div>
+    </header>
+    <main>
+        <h2 class="title--form-peliculas">Agrega una pelicula</h2>
+        <form class="form-peliculas">
+            <section class="section-form-peliculas">
+                <div id="box--form-peliculas">
+                <label for="Titulo-pelicula"><span>Titulo de la pelicula</span></label>
+            <input type="text" id="Titulo-pelicula" name="Titulo-pelicula" placeholder="Escribe el titulo de la pelicula" size="30">
+            </div>
+            <div id="box--form-peliculas">
+                <label for="Sinopsis"><span>Sinopsis</span>
+                <textarea name="sinopsis" id="sinopsis"></textarea>
+                </label>
+            </div>
+            </section>
+            <div>
+                <section><label for="Plataforma1"><span>Plataforma 1</span></label>
+                <input list="Plataformas"></section>
+                <section><label for="Plataforma2"><span>Plataforma 2</span></label>
+                <input list="Plataformas"></section>
+                <section><label for="Plataforma3"><span>Plataforma 3</span></label>
+                <input list="Plataformas"></section>
+                <section><label for="Plataforma4"><span>Plataforma 4</span></label>
+                <input list="Plataformas"></section>
+                <section><label for="Plataforma5"><span>Plataforma 5</span></label>
+                <input list="Plataformas"></section>
+                <datalist name="Plataformas" id="Plataformas">
+                    <option value="Netflix">Netflix</option>
+                    <option value="Prime Video">Prime Video</option>
+                    <option value="Max">Max</option>
+                    <option value="Star+">Star+</option>
+                    <option value="Disney+">Disney+</option>
+                    <option value="Google Play peliculas">Google Play Peliculas</option>
+                    <option value="Claro Video">Claro Video</option>
+                    <option value="Apple TV">Apple TV</option>
+                    <option value="Movistar TV">Movistar TV</option>
+                    <option value="Vix">Vix</option>
+                    <option value="Rakuten TV">Rakuten TV</option>
+                    <option value="Crunchyroll">Crunchyroll</option>
+                    <option value="Filmin">Filmin</option>
+                    <option value="FlixOlé">FlixOlé</option>
+                    <option value="SkyShowtime">SkyShowtime</option>
+                </datalist>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
