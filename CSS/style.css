@@ -860,4 +860,24 @@ button:hover {
         border-radius: 5px;
         margin-bottom: 5px;
     }
-  
+    .section--add-review-peliculas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        gap: 40px;
+    }
+  .button--form-peliculas{
+    background-color: var(--Second-color);
+    color: white;
+    border-radius: 5px;
+  }
+  .a--form-peliculas{
+    text-decoration: none;
+    padding: 15px;
+  }
+  .button--form-peliculas:hover{
+    background-color: #000000;
+  }
