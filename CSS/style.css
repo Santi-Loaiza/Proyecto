@@ -873,10 +873,12 @@ button:hover {
     background-color: var(--Second-color);
     color: white;
     border-radius: 5px;
+    max-width: 320px;
+    padding-top: 1px;
   }
   .a--form-peliculas{
     text-decoration: none;
-    padding: 15px;
+    padding: 25px;
   }
   .button--form-peliculas:hover{
     background-color: #000000;
